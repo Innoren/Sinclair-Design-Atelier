@@ -45,3 +45,5 @@ preview-*.png
 verify-*.png
 capture-preview.js
 *.log
+
+.vercel
