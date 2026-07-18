@@ -7,15 +7,15 @@ import { MotionWrapper } from "./motion-wrapper";
 const testimonials = [
   {
     quote:
-      "Sinclair translated our brand into a site that finally feels as premium as our product. The motion design alone set us apart from every competitor.",
-    author: "Elena Voss",
-    role: "Founder, Maison Lumière",
+      "Sinclair built us a storefront that finally matches the quality of our cards. Clean, fast, and our collectors know exactly where to shop.",
+    author: "Juan Palau",
+    role: "Founder, PokeCitizen Collectibles",
   },
   {
     quote:
-      "The process was seamless — cinematic prototypes, clear communication, and a site that loads instantly. Exactly the caliber we needed.",
-    author: "James Okonkwo",
-    role: "Director, Northwind Studio",
+      "Our new site feels as grounded and intentional as the coaching itself. Clients book with confidence, and the brand finally has room to breathe.",
+    author: "Jordan Hale",
+    role: "Founder, Boundlessly Teal Coaching",
   },
   {
     quote:
