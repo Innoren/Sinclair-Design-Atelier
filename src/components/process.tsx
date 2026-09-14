@@ -8,25 +8,25 @@ const steps = [
     step: "01",
     title: "Discover",
     description:
-      "Deep-dive into your brand, audience, and goals. We define scope, timeline, and success metrics together.",
+      "We map your process — people, tools, and bottlenecks — then define the product outcomes that matter.",
   },
   {
     step: "02",
     title: "Design",
     description:
-      "Wireframes evolve into motion-rich prototypes. You review at every milestone until it feels exactly right.",
+      "Flows and interfaces take shape as interactive prototypes. You review milestones until the system feels right.",
   },
   {
     step: "03",
     title: "Build",
     description:
-      "Engineering with performance and accessibility at the core. Integrations, testing, and polish.",
+      "Secure, maintainable software with integrations, permissions, and polish for real daily use.",
   },
   {
     step: "04",
     title: "Launch",
     description:
-      "Deploy with confidence. Training, analytics setup, and a post-launch refinement window included.",
+      "Deploy, train your team, and refine after go-live so the software settles into your workflow.",
   },
 ];
 
@@ -52,7 +52,7 @@ export function Process() {
             Process
           </p>
           <h2 className="mt-4 font-display text-[clamp(2.5rem,5vw,4rem)] font-bold tracking-tight text-foreground">
-            A calm, collaborative path to launch.
+            A calm path from process pain to working software.
           </h2>
         </motion.div>
 

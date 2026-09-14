@@ -45,6 +45,17 @@ const projects = [
     accent: "#d4a574",
     layout: "hero" as const,
   },
+  {
+    id: "atelier-ops",
+    name: "Atelier Ops",
+    category: "Workflow Software",
+    description:
+      "Custom operations suite for studios and service firms — pipeline, projects, invoices, and team tasks in one calm system.",
+    stats: ["CRM + projects", "Role-based access", "Automation-ready"],
+    gradient: "from-[#12100e] via-[#2a241c] to-[#4a3f32]",
+    accent: "#c9a87c",
+    layout: "split" as const,
+  },
 ];
 
 function SitePreview({
@@ -299,7 +310,7 @@ export function Showcase() {
             Selected work
           </p>
           <h2 className="mt-4 max-w-3xl font-display text-[clamp(2.5rem,5vw,4rem)] font-bold tracking-tight text-light-fg">
-            Sites engineered to captivate and convert.
+            Products and sites engineered to work harder.
           </h2>
         </MotionWrapper>
 
@@ -355,7 +366,7 @@ export function Showcase() {
                   rel="noopener noreferrer"
                   className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-light-fg underline-offset-4 transition-colors hover:text-accent hover:underline"
                 >
-                  Visit site
+                  Visit live project
                   <span aria-hidden="true">→</span>
                 </a>
               )}

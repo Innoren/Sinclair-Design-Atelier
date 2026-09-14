@@ -5,23 +5,30 @@ import { MotionWrapper } from "./motion-wrapper";
 
 const features = [
   {
-    label: "Tailored to you",
-    title: "Strategy before pixels",
+    label: "Mapped to your process",
+    title: "Strategy before screens",
     description:
-      "We translate your brand, audience, and goals into a design system that's unmistakably yours — never template-driven.",
+      "We study how work moves through your team — handoffs, bottlenecks, and tools — then design software around that reality.",
   },
   {
-    label: "Built to perform",
+    label: "Built to operate",
     title: "Engineering with intent",
     description:
-      "Modern frameworks, semantic HTML, and optimized assets. Fast loads and flawless experiences on every screen.",
+      "Reliable apps with clean data models, secure access, and interfaces your team will actually open every day.",
   },
   {
     label: "Designed to evolve",
     title: "Systems that scale",
     description:
-      "CMS integrations, component libraries, and documentation so your site grows with your business.",
+      "Modular products, integrations, and documentation so the software grows with your company instead of locking you in.",
   },
+];
+
+const pipeline = [
+  { stage: "Inquiry", count: 12 },
+  { stage: "Qualified", count: 7 },
+  { stage: "In build", count: 4 },
+  { stage: "Delivered", count: 9 },
 ];
 
 export function Studio() {
@@ -34,52 +41,76 @@ export function Studio() {
               The studio
             </p>
             <h2 className="mt-4 font-display text-[clamp(2.5rem,5vw,4rem)] font-bold tracking-tight text-light-fg">
-              Build a bespoke website with design intelligence.
+              Build bespoke software with design intelligence.
             </h2>
             <p className="mt-6 text-lg leading-8 text-[#6b6560]">
-              Like the best platforms, we combine AI-assisted strategy with
-              human craft — but every pixel is hand-finished, every interaction
-              considered, every launch deliberate.
+              We combine product thinking with human craft — every workflow is
+              mapped, every interface is hand-finished, and every launch is
+              deliberate.
             </p>
           </MotionWrapper>
 
           <div className="relative">
             <div className="relative rounded-2xl border border-[#d4d0c8] bg-white p-6 shadow-2xl">
-              <div className="mb-4 flex items-center justify-between">
+              <div className="mb-5 flex items-center justify-between">
                 <span className="text-xs font-medium uppercase tracking-[0.2em] text-[#8a8680]">
-                  Design system
+                  Operations console
                 </span>
-                <div className="flex gap-1">
-                  {["#c9a87c", "#1a1a1a", "#f7f5f2", "#3d5a5c"].map((color) => (
-                    <div
-                      key={color}
-                      className="h-5 w-5 rounded-full border border-[#d4d0c8]"
-                      style={{ backgroundColor: color }}
-                    />
-                  ))}
-                </div>
+                <motion.span
+                  animate={{ opacity: [0.45, 1, 0.45] }}
+                  transition={{ duration: 2.2, repeat: Infinity }}
+                  className="rounded-full bg-accent/15 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.15em] text-[#8a5a2b]"
+                >
+                  Live
+                </motion.span>
               </div>
 
-              <div className="space-y-3">
-                {["Heading / Outfit Bold", "Body / Source Sans", "Accent / Champagne"].map(
-                  (type) => (
-                    <div
-                      key={type}
-                      className="flex items-center justify-between rounded-lg bg-[#f7f5f2] px-4 py-3"
+              <div className="grid grid-cols-2 gap-3">
+                {pipeline.map((item, i) => (
+                  <motion.div
+                    key={item.stage}
+                    initial={{ opacity: 0, y: 8 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.08 }}
+                    className="rounded-xl bg-[#f7f5f2] px-4 py-4"
+                  >
+                    <p className="text-[11px] uppercase tracking-[0.18em] text-[#8a8680]">
+                      {item.stage}
+                    </p>
+                    <p className="mt-2 font-display text-3xl font-bold text-light-fg">
+                      {item.count}
+                    </p>
+                  </motion.div>
+                ))}
+              </div>
+
+              <div className="mt-5 space-y-2">
+                {[
+                  "Auto-route new leads to discovery",
+                  "Sync invoices to accounting",
+                  "Notify team on status change",
+                ].map((row, i) => (
+                  <div
+                    key={row}
+                    className="flex items-center justify-between rounded-lg bg-[#f7f5f2] px-4 py-3"
+                  >
+                    <span className="text-sm leading-normal text-light-fg">
+                      {row}
+                    </span>
+                    <motion.span
+                      animate={{ opacity: [0.35, 1, 0.35] }}
+                      transition={{
+                        duration: 2,
+                        repeat: Infinity,
+                        delay: i * 0.35,
+                      }}
+                      className="text-xs leading-normal text-accent"
                     >
-                      <span className="text-sm leading-normal text-light-fg">
-                        {type}
-                      </span>
-                      <motion.span
-                        animate={{ opacity: [0.4, 1, 0.4] }}
-                        transition={{ duration: 2, repeat: Infinity }}
-                        className="text-xs leading-normal text-[#8a8680]"
-                      >
-                        Active
-                      </motion.span>
-                    </div>
-                  ),
-                )}
+                      Active
+                    </motion.span>
+                  </div>
+                ))}
               </div>
 
               <motion.div

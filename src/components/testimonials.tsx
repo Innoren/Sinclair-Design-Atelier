@@ -19,7 +19,7 @@ const testimonials = [
   },
   {
     quote:
-      "They didn't just build a website. They built a digital experience that our customers talk about. Bookings jumped 65% in the first quarter.",
+      "They didn't just ship a pretty interface — they rebuilt how we track projects and handoffs. The team finally works from one system.",
     author: "Sarah Chen",
     role: "Owner, Harvest & Co.",
   },
@@ -43,7 +43,7 @@ export function Testimonials() {
             Client words
           </p>
           <h2 className="mt-4 font-display text-[clamp(2.5rem,5vw,4rem)] font-bold tracking-tight text-light-fg">
-            Trusted by brands with standards.
+            Trusted by teams with standards.
           </h2>
         </MotionWrapper>
 

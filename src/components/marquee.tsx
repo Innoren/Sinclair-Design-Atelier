@@ -1,14 +1,14 @@
 const items = [
-  "Brand Identity",
-  "E-Commerce",
-  "Motion Design",
-  "Web Development",
-  "SEO Strategy",
-  "UI/UX Design",
-  "Content Systems",
-  "Performance",
-  "Accessibility",
-  "Analytics",
+  "Custom Software",
+  "Workflow Systems",
+  "Websites",
+  "Internal Tools",
+  "CRM & Ops",
+  "Client Portals",
+  "Automations",
+  "Integrations",
+  "Dashboards",
+  "Product Design",
 ];
 
 export function Marquee() {

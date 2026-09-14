@@ -18,7 +18,8 @@ export function Footer() {
           <div>
             <Logo height={72} />
             <p className="mt-6 max-w-xs text-sm leading-relaxed text-muted">
-              Crafted digital experiences for brands that demand excellence.
+              Websites and custom software for companies that want clearer
+              process and stronger presence.
             </p>
           </div>
 

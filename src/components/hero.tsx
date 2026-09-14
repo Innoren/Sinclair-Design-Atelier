@@ -12,10 +12,10 @@ import { useEffect, useState } from "react";
 import { Logo } from "./logo";
 
 const rotatingWords = [
-  "cinematic",
-  "conversion-driven",
+  "operational",
   "bespoke",
-  "unforgettable",
+  "intelligent",
+  "seamless",
   "refined",
 ];
 
@@ -79,7 +79,7 @@ export function Hero() {
             transition={{ duration: 1, delay: 0.3 }}
             className="block text-foreground"
           >
-            We craft websites that are
+            We craft software that is
           </motion.span>
           <span className="relative mt-2 block text-accent">
             <AnimatePresence mode="wait">
@@ -103,8 +103,8 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="mt-10 max-w-xl text-lg leading-8 text-muted"
         >
-          A design studio for brands that refuse to blend in. Strategy,
-          motion, and engineering — unified under one roof.
+          Websites, internal tools, and workflow systems — designed and
+          engineered to help companies move faster with less friction.
         </motion.p>
 
         <motion.div

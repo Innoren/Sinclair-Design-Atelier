@@ -26,11 +26,12 @@ export function Contact() {
               Contact
             </p>
             <h2 className="mt-4 font-display text-[clamp(2.5rem,5vw,4rem)] font-bold tracking-tight text-foreground">
-              Let&apos;s build something remarkable.
+              Let&apos;s build the system your company needs.
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-muted">
-              Tell us about your project — timeline, goals, and budget range.
-              We respond within one business day.
+              Website, internal tool, CRM, or full workflow platform — tell us
+              the process you want to improve. We respond within one business
+              day.
             </p>
 
             <div className="mt-12 space-y-6">
@@ -118,16 +119,17 @@ export function Contact() {
                         : "top-4 text-sm text-muted"
                     }`}
                   >
-                    Project details
+                    What should we build?
                   </label>
                   <textarea
                     id="message"
                     name="message"
                     required
                     rows={4}
+                    placeholder="Website, ops tool, client portal, automation…"
                     onFocus={() => setFocused("message")}
                     onBlur={(e) => !e.target.value && setFocused(null)}
-                    className="w-full resize-none rounded-xl border border-border bg-background px-4 pb-3 pt-8 text-foreground outline-none transition-colors focus:border-accent"
+                    className="w-full resize-none rounded-xl border border-border bg-background px-4 pb-3 pt-8 text-foreground outline-none transition-colors focus:border-accent placeholder:text-muted/50"
                   />
                 </div>
                 <button

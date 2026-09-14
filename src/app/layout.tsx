@@ -2,14 +2,16 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Sinclair Design Atelier — The Art of Digital Craft",
+  title: "Sinclair Design Atelier — Software & Digital Craft",
   description:
-    "Sinclair Design Atelier builds cinematic, high-performance websites for brands that demand excellence. Strategy, design, and engineering — refined.",
+    "Sinclair Design Atelier designs and builds websites, custom software, and workflow systems that help companies operate with clarity and speed.",
   keywords: [
+    "custom software",
+    "workflow systems",
+    "business software",
     "web design agency",
-    "custom websites",
+    "internal tools",
     "Sinclair Design Atelier",
-    "premium web development",
   ],
   icons: {
     icon: [
@@ -20,9 +22,9 @@ export const metadata: Metadata = {
     shortcut: "/favicon.png",
   },
   openGraph: {
-    title: "Sinclair Design Atelier — The Art of Digital Craft",
+    title: "Sinclair Design Atelier — Software & Digital Craft",
     description:
-      "Bespoke digital experiences with motion, precision, and purpose.",
+      "Websites, internal tools, and workflow software — crafted with precision.",
     type: "website",
     images: [{ url: "/logo.png" }],
   },

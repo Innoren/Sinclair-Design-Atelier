@@ -4,39 +4,39 @@ import { MotionWrapper, StaggerChildren, StaggerItem } from "./motion-wrapper";
 
 const capabilities = [
   {
-    title: "Motion & Interaction",
+    title: "Websites & Brand Sites",
     description:
-      "Scroll-driven animations, micro-interactions, and cinematic transitions that make every visit feel alive.",
+      "Cinematic marketing sites and conversion-focused experiences that introduce your company with clarity and presence.",
     icon: "◈",
   },
   {
-    title: "Responsive Architecture",
+    title: "Custom Business Software",
     description:
-      "Pixel-perfect on every device. Adaptive layouts that feel native to desktop, tablet, and mobile.",
+      "Purpose-built apps for the way your team actually works — not another off-the-shelf tool that fights your process.",
     icon: "◇",
   },
   {
-    title: "Performance Engineering",
+    title: "Workflow & Ops Systems",
     description:
-      "Sub-3-second loads, optimized assets, and Core Web Vitals that rank — because speed is design.",
+      "Pipelines, approvals, tasking, and status tracking that replace spreadsheets and scattered chat threads.",
     icon: "○",
   },
   {
-    title: "SEO & Analytics",
+    title: "CRM & Client Portals",
     description:
-      "Structured data, semantic markup, and analytics dashboards so you know exactly what's working.",
+      "Lead intake, relationship management, and secure client spaces that keep projects and communication in one place.",
     icon: "△",
   },
   {
-    title: "E-Commerce Systems",
+    title: "Integrations & Automation",
     description:
-      "Shopify, Stripe, and custom checkout flows that turn beautiful design into reliable revenue.",
+      "Connect Stripe, email, calendars, inventory, and internal data so work moves without manual handoffs.",
     icon: "□",
   },
   {
-    title: "Content Management",
+    title: "Dashboards & Reporting",
     description:
-      "Headless CMS integrations that let your team publish, edit, and scale without touching code.",
+      "Live views of pipeline, delivery, and performance so leaders and teams can act on the same source of truth.",
     icon: "◎",
   },
 ];
@@ -74,11 +74,11 @@ export function Capabilities() {
             Capabilities
           </p>
           <h2 className="mt-4 font-display text-[clamp(2.5rem,5vw,4rem)] font-bold tracking-tight text-foreground">
-            Creative tools to help you stand out online.
+            Software for the way your company actually works.
           </h2>
           <p className="mt-6 text-lg leading-8 text-muted">
-            Every project is built with the same precision we&apos;d demand for
-            our own brand — motion, performance, and craft in equal measure.
+            From public-facing sites to the systems behind the scenes — we
+            design and engineer tools that reduce friction across your process.
           </p>
         </MotionWrapper>
 
