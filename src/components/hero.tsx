@@ -9,6 +9,7 @@ import {
   useTransform,
 } from "framer-motion";
 import { useEffect, useState } from "react";
+import { Logo } from "./logo";
 
 const rotatingWords = [
   "cinematic",
@@ -62,14 +63,14 @@ export function Hero() {
         style={{ opacity }}
         className="site-container relative w-full"
       >
-        <motion.p
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="mb-8 text-xs font-medium uppercase tracking-[0.35em] text-accent"
+          className="mb-10"
         >
-          Sinclair Design Atelier
-        </motion.p>
+          <Logo height={128} className="max-w-[min(100%,22rem)] sm:max-w-none" />
+        </motion.div>
 
         <h1 className="max-w-6xl font-display text-[clamp(2.8rem,7vw,7rem)] font-bold leading-[1.15] tracking-tight">
           <motion.span
